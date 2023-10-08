@@ -1,0 +1,37 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+
+    .home_title{
+        font-size: 3rem;
+    }
+
+    .home_form{
+        position: relative;
+    }
+
+    .home_input{
+        margin-top: 3rem;
+        width: 40rem;
+        height: 2rem;
+        border-radius: .5rem;
+        border: none;
+    }
+
+
+    .home_btn_search{
+        width: 5rem;
+        height: 2.2rem;
+        position: absolute;
+        top: 3rem;
+        right: 0rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .home_btn_flags{
+        margin-top: 5rem;
+    }
+}

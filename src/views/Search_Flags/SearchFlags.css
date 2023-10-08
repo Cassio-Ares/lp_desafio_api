@@ -1,0 +1,13 @@
+.flags {
+
+  .flags_title {
+    font-size: 1.8rem;
+    margin-left: 6rem;
+  }
+
+  .flags_section {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+  }
+}

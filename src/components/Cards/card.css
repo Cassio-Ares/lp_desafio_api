@@ -1,0 +1,9 @@
+.cards{
+ font-size: 0.8rem;
+ margin: 2rem;
+
+
+    .cards_img{
+        width: 12rem;
+    }
+}
