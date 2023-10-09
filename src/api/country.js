@@ -14,7 +14,7 @@ export class Countries {
   };
 
   static searchCountry(name){
-    return axios (accApi(`name/${name}?fullText=true`))
+    return axios (accApi(`name/${name}`))
   }
 
 }

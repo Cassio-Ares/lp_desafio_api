@@ -1,9 +1,15 @@
-.cards{
- font-size: 0.8rem;
- margin: 2rem;
+.cards {
+  font-size: 0.8rem;
+  margin: 2rem;
 
+  .cards_img {
+    width: 12rem;
+    background: #ababab;
+    box-shadow: 5px 5px 15px #7b7b7b, -5px -5px 15px #dbdbdb;
+    transition: 2s;
+  }
 
-    .cards_img{
-        width: 12rem;
-    }
+  .cards_img:hover{
+    transform: scale(1.2, 1.2);
+  }
 }

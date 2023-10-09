@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import { Countries } from "../../api/country";
 import { Link } from "react-router-dom";
 import "./home.css";
-import SearchFlags from "../Search_Flags/SearchFlags";
+import SearchFlags from "../../components/Search_Flags/SearchFlags";
 
 const Home = () => {
   const [country, setCountry] = useState([]);
   const [nameCountry, setNameCountry] = useState("");
-  const [showBTN, setShowBTN] = useState(false);
 
   /**
    * muda o parametro para acessar uma busca especifica na API
@@ -24,7 +23,7 @@ const Home = () => {
   }, [nameCountry]);
 
   useEffect(() => {
-    console.log(country);
+      console.log(country);
   });
 
   /**
@@ -42,13 +41,14 @@ const Home = () => {
     <main className="home">
       <h1 className="home_title">Qual pais vc gostaria de conhecer?</h1>
 
-      <form onSubmit={handle} className="home_form">
+       <form onSubmit={handle} className="home_form">
         <input type="text" className="home_input" />
-        <button className="home_btn_search">OIIII</button>
-
-        <img src={country} alt={country} />
-      </form>
-     <SearchFlags/>
+        <Link to={`/details/${country}`}>
+        
+          <button className="home_btn_search">Buscar</button>
+         </Link>
+      </form> 
+      <SearchFlags />
     </main>
   );
 };

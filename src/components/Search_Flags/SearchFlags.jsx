@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Countries } from "../../api/country";
-import Card from "../../components/Cards/Card";
+import Card from "../Cards/Card";
 
 import "./SearchFlags.css";
 

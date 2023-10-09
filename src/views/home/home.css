@@ -10,6 +10,7 @@
 
     .home_form{
         position: relative;
+        margin-bottom: 2.5rem;
     }
 
     .home_input{
@@ -23,15 +24,13 @@
 
     .home_btn_search{
         width: 5rem;
-        height: 2.2rem;
+        height: 2.3rem;
         position: absolute;
-        top: 3rem;
+        top: 2.9rem;
         right: 0rem;
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
     }
 
-    .home_btn_flags{
-        margin-top: 5rem;
-    }
+
 }
